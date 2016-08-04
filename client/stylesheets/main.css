@@ -1,0 +1,28 @@
+/*#CCe0e3  blue*/  
+/*#F1F0E7  lighter gray brown*/
+/*#E2231A  light red*/
+/*#A91A17  dark red*/
+/*#69696A  gray*/
+
+body {
+  background-color: #CCe0e3;
+}
+
+.home-page {
+  min-height: 110em;
+  /*min-width: 100%;*/
+  background: url('/fish/fish_background.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.red-overlay {
+  min-height: 110em;
+  width: 100%;
+  background-color: rgba(226, 35, 26, 0.9);
+}
+.side-buttons {
+  width: 50%;
+  float:left;
+}
