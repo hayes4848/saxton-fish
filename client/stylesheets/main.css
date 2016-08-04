@@ -23,6 +23,13 @@ body {
   background-color: rgba(226, 35, 26, 0.9);
 }
 .side-buttons {
-  width: 50%;
+  width: 48%;
   float:left;
+}
+.button-north {
+  margin-left: 2%;
+}
+.button-south {
+  /*right: 2em;*/
+  /*margin-left: -2em;*/
 }
