@@ -1,7 +1,8 @@
 <template name="addInfo">
   {{>header}}
   <div class="voterBlock">
-    {{renderTemplate}}
+    <!-- {{renderTemplate}} -->
+    {{ > Template.dynamic template=tab }}
   </div>
   
   <div class="footer-nav">

@@ -1,8 +1,10 @@
-Session.set('currentTemplate', 'initFishVote');
+Template.addInfo.onCreated( function() {
+  this.currentTab = new ReactiveVar( "initFishVote" );
+});
+
 
 Template.addInfo.helpers({
-  'renderTemplate': function(){
-    // return Session.get('currentTemplate');
-    return new Handlebars.SafeString(Template[Session.get('currentTemplate')]);
+  tab: function() {
+    return Template.instance().currentTab.get();
   }
 })

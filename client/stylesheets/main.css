@@ -70,40 +70,42 @@ body {
 }
 .voting-body {
   position: relative;
-  margin-top: 2em;
+  margin-top: -5em;
 }
 .fish-scale {
   width: 45%;
   float: left;
   margin-top: 20%;
 }
-.fish-scale div {
+.voting-body div {
     position: absolute;
+    /*bottom: 0;*/
+    /*margin-top: 10em;*/
   }
 .fish-1 {
-  margin-top: 8em;
+  margin-top: 11em;
   margin-left: -2.5em;
-  /*margin-right: -2em;*/
 }
 .fish-2 {
-  margin-top: 7.5em;
-  margin-left: -7.7em;
-  margin-right: -3em;
+  margin-top: 10.65em;
+  margin-left: 0.5em;
 }
 .fish-3 { 
-  margin-top: 6.9em;
-  margin-left: -5em;
+  margin-top: 10.2em;
+  margin-left: 4em;
 }
 .fish-4 {
-  margin-top: 6em;
-  margin-left: -7em;
+  margin-top: 9.6em;
+  margin-left: 7.7em;
 }
 .fish-5 {
-  margin-left: -6em;
+  margin-top: 8.8em;
+  margin-left: 13em;
 }
 .fish-lines {
+  margin-top: 22em;
   clear: both;
-  position: relative;
+  position: absolute;
   width: 100%;
 }
 
@@ -125,5 +127,16 @@ body {
   position: absolute;
   width: 30%;
   border-bottom: 3px solid #7eb6bc;
-  left: 27%;
+  left: 29%;
+}
+.submit-button {
+    color: #7eb6bc;
+    border: 2px solid #7eb6bc;
+    position: absolute;
+    margin-top: 16em;
+    width: 40%;
+    margin-left: 30%;
+    font-size: 25px;
+    padding: 10px 30px;
+    border-radius: 30px;
 }
