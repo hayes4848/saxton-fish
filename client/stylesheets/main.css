@@ -42,7 +42,7 @@ body {
 }
 
 .home-page {
-  min-height: 110em;
+  /*min-height: 110em;*/
   /*min-width: 100%;*/
   background: url('/fish/fish_background.png') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -51,8 +51,11 @@ body {
   background-size: cover;
 }
 .red-overlay {
-  min-height: 110em;
-  width: 100%;
+  min-height: 47em;
+  width: 104%;
+  margin-top: -2%;
+  margin-left: -2%;
+
   background-color: rgba(226, 35, 26, 0.9);
 }
 .side-buttons {
@@ -93,8 +96,34 @@ body {
 }
 .fish-4 {
   margin-top: 6em;
-  margin-left: -4em;
+  margin-left: -7em;
 }
 .fish-5 {
   margin-left: -6em;
+}
+.fish-lines {
+  clear: both;
+  position: relative;
+  width: 100%;
+}
+
+.guppy-text {
+  color: #7eb6bc;
+  margin-top: -0.5em;
+  position: absolute;
+  width: 25%;
+  left: 3em;
+}
+.grouper-text {
+  color: #7eb6bc;
+  margin-top: -0.5em;
+  position: absolute;
+  width: 25%;
+  right: 3em;
+}
+.cool-line {
+  position: absolute;
+  width: 30%;
+  border-bottom: 3px solid #7eb6bc;
+  left: 27%;
 }
