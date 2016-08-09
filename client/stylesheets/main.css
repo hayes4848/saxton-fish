@@ -149,7 +149,7 @@ body {
   float: left;
   color: #7eb6bc;
   margin-top: -0.5em;
-  margin-right: -2%;
+  margin-right: 1%;
   margin-left: 5%;
   /*position: absolute;*/
   width: 25%;
@@ -192,4 +192,22 @@ body {
   font-size: 35px;
   padding: 10px 30px;
   border-radius: 30px;
+}
+.date {
+  text-align: center;
+  color: #7eb6bc;
+  font-size: 25px;
+  margin-top: 2em;
+}
+.fish-image {
+  width: 80%;
+  margin-left: 10%;
+}
+#codFish {
+  margin-left: 5%;
+}
+.fish-name {
+  color: #7eb6bc;
+  text-align: center;
+  /*margin-top: -2em;*/
 }

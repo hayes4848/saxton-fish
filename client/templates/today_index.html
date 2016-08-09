@@ -1,5 +1,14 @@
 <template name="todayIndex">
   {{>header}}
+
+
+  <div class="date">
+    {{todayDate}}
+  </div>
+
+  <div class="fish-box">
+    {{> Template.dynamic template=whichFish }}
+  </div>
   
 
 
