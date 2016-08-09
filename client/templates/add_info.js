@@ -26,8 +26,9 @@ Template.addInfo.events({
     Template.instance().currentTab.set('fish5')
   },
   'click #submit1': function() {
+    var date = new Date();
     var vote = {
-      date: new Date(),
+      day: moment(date).format("MM.DD.YYYY"),
       side: Session.get('side'),
       vote: 'fish1'
     };
@@ -36,8 +37,9 @@ Template.addInfo.events({
     Router.go('todayIndex');
   },
   'click #submit2': function() {
+    var date = new Date();
     var vote = {
-      date: new Date(),
+      day: moment(date).format("MM.DD.YYYY"),
       side: Session.get('side'),
       vote: 'fish2'
     };
@@ -46,8 +48,9 @@ Template.addInfo.events({
     Router.go('todayIndex');
   },
   'click #submit3': function() {
+    var date = new Date();
     var vote = {
-      date: new Date(),
+      day: moment(date).format("MM.DD.YYYY"),
       side: Session.get('side'),
       vote: 'fish3'
     };
@@ -56,8 +59,9 @@ Template.addInfo.events({
     Router.go('todayIndex');
   },
   'click #submit4': function() {
+    var date = new Date();
     var vote = {
-      date: new Date(),
+      day: moment(date).format("MM.DD.YYYY"),
       side: Session.get('side'),
       vote: 'fish4'
     };
@@ -66,8 +70,9 @@ Template.addInfo.events({
     Router.go('todayIndex');
   },
   'click #submit5': function() {
+    var date = new Date();
     var vote = {
-      date: new Date(),
+      day: moment(date).format("MM.DD.YYYY"),
       side: Session.get('side'),
       vote: 'fish5'
     };

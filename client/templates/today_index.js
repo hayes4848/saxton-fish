@@ -10,15 +10,18 @@ Template.todayIndex.helpers({
   //   return Votes.find()
   // },
   whichFish: function() {
+    date = new Date();
+    today = moment(date).format("MM.DD.YYYY");
+    allVotes = Votes.find({side:"South", day:today}).fetch();
+    console.log(allVotes);
     return Template.instance().currentTab.get();
   },
 
   todayDate: function() {
-    var date = new Date()
-    var today = moment(date).format("MM.DD.YYYY");
-    var month = dateToText(moment(date).format("MM"));
+    date = new Date();
+    today = moment(date).format("MM.DD.YYYY");
+    month = dateToText(moment(date).format("MM"));
     dateString  = dateToText(moment(date).format("MM")) + ' ' + moment(date).format("DD") + ', ' + moment(date).format("YYYY");
-    // var today = date.toString();
     return dateString;
   }, 
 

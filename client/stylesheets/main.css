@@ -8,6 +8,8 @@
 body {
   background-color: #CCe0e3;
   font-size: 16px;
+  width: 100%;
+  overflow: none;
 }
 .header{
   position: relative;
@@ -51,7 +53,7 @@ body {
 }
 
 .home-page {
-  min-height: 110em;
+  min-height: 50em;
   /*min-width: 100%;*/
   background: url('/fish/fish_background.png') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -60,7 +62,7 @@ body {
   background-size: cover;
 }
 .red-overlay {
-  min-height: 110em;
+  min-height: 50em;
   width: 104%;
   margin-top: -2%;
   margin-left: -2%;
