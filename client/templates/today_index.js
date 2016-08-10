@@ -1,5 +1,9 @@
 Template.todayIndex.onCreated( function() {
-  this.currentTab = new ReactiveVar( "codFish" );
+  this.guppy = new ReactiveVar( "guppy" );
+  this.codFish = new ReactiveVar( "codFish" );
+  this.seaBass = new ReactiveVar( "seaBass" );
+  this.pollock = new ReactiveVar( "pollock" );
+  this.grouper = new ReactiveVar( "grouper" );
 });
 
 Template.todayIndex.helpers({
@@ -13,8 +17,38 @@ Template.todayIndex.helpers({
     date = new Date();
     today = moment(date).format("MM.DD.YYYY");
     allVotes = Votes.find({side:"South", day:today}).fetch();
+
+    var voteTally = {};
+    var fish='';
+    for(var i=0; i < allVotes.length; i++) { 
+      var fish = allVotes[i].vote
+      count = 0;
+      for(var j=0; j < allVotes.length; j++) {
+        if(allVotes[j].vote == fish){
+          count ++;
+        }
+      }
+      voteTally[allVotes[i].vote] = count;
+    };
+
+    var keysSorted = Object.keys(voteTally).sort(function(a,b){return voteTally[a]-voteTally[b]});
+
+    var lastItem = keysSorted.pop();
+
     console.log(allVotes);
-    return Template.instance().currentTab.get();
+
+    if(lastItem == "fish1"){
+      return Template.instance().guppy.get();
+    } else if(lastItem == "fish2"){
+      return Template.instance().codFish.get();
+    } else if(lastItem == "fish3"){
+      return Template.instance().seaBass.get();
+    } else if(lastItem == "fish4"){
+      return Template.instance().pollock.get();
+    } else if(lastItem == "fish5"){
+      return Template.instance().grouper.get();
+    }
+    
   },
 
   todayDate: function() {
