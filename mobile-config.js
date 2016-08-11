@@ -15,7 +15,7 @@ App.info({
 //   // ... more screen sizes and platforms ...
 // });
 App.launchScreens({
-  'iphone': 'fish/fish_background.png',
-  'iphone_2x': 'fish/fish_background.png',
+  'iphone6': 'public/fish/fish_background.png',
+  'iphone_2x': 'public/fish/fish_background.png',
   // ... more screen sizes and platforms ...
 });
