@@ -1,5 +1,6 @@
 Template.todayIndex.onCreated( function() {
-  this.guppy = new ReactiveVar( "guppy" );
+  this.noVote =  new ReactiveVar("noVote");
+  this.guppy =   new ReactiveVar( "guppy" );
   this.codFish = new ReactiveVar( "codFish" );
   this.seaBass = new ReactiveVar( "seaBass" );
   this.pollock = new ReactiveVar( "pollock" );
@@ -37,15 +38,20 @@ Template.todayIndex.helpers({
 
     console.log(allVotes);
 
-    if(lastItem == "fish1"){
+    if(allVotes.length < 1){
+      console.log(lastItem)
+      return Template.instance().noVote.get();
+    } else if(Session.get('side') == "North"){
       return Template.instance().guppy.get();
-    } else if(lastItem == "fish2"){
+    } else if(Session.get('side') == "Sorth" && lastItem == "fish1"){
+      return Template.instance().guppy.get();
+    } else if(Session.get('side') == "Sorth" && lastItem == "fish2"){
       return Template.instance().codFish.get();
-    } else if(lastItem == "fish3"){
+    } else if(Session.get('side') == "Sorth" && lastItem == "fish3"){
       return Template.instance().seaBass.get();
-    } else if(lastItem == "fish4"){
+    } else if(Session.get('side') == "Sorth" && lastItem == "fish4"){
       return Template.instance().pollock.get();
-    } else if(lastItem == "fish5"){
+    } else if(Session.get('side') == "Sorth" && lastItem == "fish5"){
       return Template.instance().grouper.get();
     }
     
@@ -63,28 +69,28 @@ Template.todayIndex.helpers({
 
  function dateToText(month) {
     if(month == '01'){
-      return "January";
+      return "JANUARY";
     } else if(month == '02'){
-      return "February";
+      return "FEBRUARY";
     } else if(month == '03'){
-      return "March";
+      return "MARCH";
     }else if(month == '04'){
-      return "April";
+      return "APRIL";
     } else if(month == '05'){
-      return "May";
+      return "MAY";
     } else if(month == '06'){
-      return "June";
+      return "JUNE";
     } else if(month == '07'){
-      return "July";
+      return "JULY";
     } else if(month == '08'){
-      return "August";
+      return "AUGUST";
     } else if(month == '09'){
-      return "September";
+      return "SEPTEMBER";
     } else if(month == '10'){
-      return "October";
+      return "OCTOBER";
     } else if(month == '11'){
-      return "November";
+      return "NOVEMBER";
     } else if(month == '12'){
-      return "December";
+      return "DECEMBER";
     }
   }
