@@ -4,8 +4,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 2em;
   
   #ticks {
+    color: #7eb6bc;
     position: relative; 
     top: -250px; 
     left: 2px;
@@ -13,13 +15,13 @@
     height: 300px; 
     z-index: 1;
     margin-bottom: -300px;
-    font-size: 10px;
+    font-size: 15px;
     font-family: "fira-sans-2", Verdana, sans-serif;
   }
 
   #ticks .tick {
     position: relative; 
-    border-top: 1px dotted #C4C4C4; 
+    // border-top: 1px dotted #C4C4C4; 
     width: 100%;
   }
 
@@ -29,16 +31,16 @@
     // top: -0.8em; 
     margin: 0 0 0 0.5em;
   }
-  caption {
-    caption-side: top; 
-    width: 300px;
-    text-transform: uppercase;
-    letter-spacing: .5px;
-    top: 0;
-    position: relative; 
-    z-index: 10;
-    font-weight: bold;
-  }
+  // caption {
+  //   caption-side: top; 
+  //   width: 300px;
+  //   text-transform: uppercase;
+  //   letter-spacing: .5px;
+  //   top: 0;
+  //   position: relative; 
+  //   z-index: 10;
+  //   font-weight: bold;
+  // }
   #graph {
     display: block; /* fixes layout wonkiness in FF1.5 */
     position: relative; 
@@ -47,7 +49,7 @@
     margin: 1.1em 0 0; 
     padding: 0;
     background: transparent;
-    font-size: 11px;
+    font-size: 0.65em;
   }
   #graph tr, #graph th, #graph td { 
     position: absolute;
@@ -95,7 +97,7 @@
   #graph tbody tr {
     height: 50%;
     padding-top: 2px;
-    border-right: 1px dotted #C4C4C4; 
+    // border-right: 1px dotted #C4C4C4; 
     color: #AAA;
     
   }
@@ -114,10 +116,16 @@
   .row-label {
     width: 15px;
     margin: 0;
-    font-size: 15px;
+    font-size: 15px !important;
     margin-left: 0.5em !important;
-    margin-bottom: 0 !important;
+    margin-bottom: 1em !important;
+    color: #7eb6bc;
   }
+}
+.ten-day-text {
+  width: 100%;
+  text-align: center;
+  color: #7eb6bc;
 }
 
 
