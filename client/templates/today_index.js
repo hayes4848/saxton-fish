@@ -36,22 +36,21 @@ Template.todayIndex.helpers({
 
     var lastItem = keysSorted.pop();
 
-    console.log(allVotes);
+    console.log(lastItem);
 
-    if(allVotes.length < 1){
-      console.log(lastItem)
+    if(Session.get('side') == "North"){
+      return Template.instance().guppy.get();
+    } else if(allVotes.length < 1){
       return Template.instance().noVote.get();
-    } else if(Session.get('side') == "North"){
+    } else if(Session.get('side') == "South" && lastItem == "fish1"){
       return Template.instance().guppy.get();
-    } else if(Session.get('side') == "Sorth" && lastItem == "fish1"){
-      return Template.instance().guppy.get();
-    } else if(Session.get('side') == "Sorth" && lastItem == "fish2"){
+    } else if(Session.get('side') == "South" && lastItem == "fish2"){
       return Template.instance().codFish.get();
-    } else if(Session.get('side') == "Sorth" && lastItem == "fish3"){
+    } else if(Session.get('side') == "South" && lastItem == "fish3"){
       return Template.instance().seaBass.get();
-    } else if(Session.get('side') == "Sorth" && lastItem == "fish4"){
+    } else if(Session.get('side') == "South" && lastItem == "fish4"){
       return Template.instance().pollock.get();
-    } else if(Session.get('side') == "Sorth" && lastItem == "fish5"){
+    } else if(Session.get('side') == "South" && lastItem == "fish5"){
       return Template.instance().grouper.get();
     }
     

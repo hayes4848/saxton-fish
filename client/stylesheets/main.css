@@ -213,3 +213,10 @@ body {
   text-align: center;
   /*margin-top: -2em;*/
 }
+.no-vote-header {
+  margin-top: 5em;
+}
+.no-vote {
+  width: 80%;
+  margin-left: 10%;
+}
