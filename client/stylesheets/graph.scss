@@ -5,13 +5,14 @@
   justify-content: center;
   align-items: center;
   margin-top: 2em;
+  margin-left: 3em;
   
   #ticks {
     color: #7eb6bc;
     position: relative; 
     top: -250px; 
     left: 2px;
-    width: 80%; 
+    width: 100%; 
     height: 300px; 
     z-index: 1;
     margin-bottom: -300px;
@@ -20,8 +21,7 @@
   }
 
   #ticks .tick {
-    position: relative; 
-    // border-top: 1px dotted #C4C4C4; 
+    position: relative;  
     width: 100%;
   }
 
@@ -31,20 +31,11 @@
     // top: -0.8em; 
     margin: 0 0 0 0.5em;
   }
-  // caption {
-  //   caption-side: top; 
-  //   width: 300px;
-  //   text-transform: uppercase;
-  //   letter-spacing: .5px;
-  //   top: 0;
-  //   position: relative; 
-  //   z-index: 10;
-  //   font-weight: bold;
-  // }
+
   #graph {
     display: block; /* fixes layout wonkiness in FF1.5 */
     position: relative; 
-    width: 90%; 
+    width: 100%; 
     height: 300px;
     margin: 1.1em 0 0; 
     padding: 0;
@@ -66,16 +57,8 @@
   }
   #graph td {
     background-color: #7eb6bc;
-    // transition: all .3s ease;
-    
-    // &:hover {
-    //   background-color: desaturate(#85144b, 100);
-    //   opacity: .9;
-    //   color: white;
-    // }
   }
-  #graph thead tr {
-    // left: 100%; 
+  #graph thead tr { 
     top: 50%; 
     bottom: auto;
     margin: -2.5em 0 0 5em;}
@@ -89,21 +72,14 @@
     left: 0; 
     line-height: 2;
   }
-  // #q-graph thead th.paid {
-  //   top: 2.75em; 
-  //   line-height: 2;
-  //   left: 0; 
-  // }
+
   #graph tbody tr {
     height: 50%;
     padding-top: 2px;
-    // border-right: 1px dotted #C4C4C4; 
     color: #AAA;
     
   }
-  #graph #row1 {
-    left: 25px;
-  }
+  #graph #row1 {left: 25px;}
   #graph #row2 {left: 50px;}
   #graph #row3 {left: 75px;}
   #graph #row4 {left: 100px;}

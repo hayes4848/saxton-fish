@@ -10,6 +10,8 @@ body {
   font-size: 16px;
   width: 100%;
   overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
 }
 .header{
   position: relative;
@@ -97,44 +99,40 @@ body {
   width: 17%;
   float: left;
 }
-.fish-scale img {
-  /*width: 100%;*/
-}
-
 
 .fish-1 img{
   width: 8%;
 
   bottom: 0;
   margin-top: 4.1em;
-  margin-left: -1em;
+  margin-left: -1.2em;
 }
 .fish-2 img {
   width: 13%;
 
   bottom: 0;
   margin-top: 3em;
-  margin-left: 8%;
+  margin-left: 5.5%;
 }
 .fish-3 img {
   width: 18%;
 
   bottom: 0;
   margin-top: 2em;
-  margin-left: 21%;
+  margin-left: 19%;
 }
 .fish-4 img {
   width: 23%;
   bottom: 0;
 
   margin-top: 1em;
-  margin-left: 38%;
+  margin-left: 36%;
 }
 .fish-5 img {
   width: 28%;
   bottom: 0;
 
-  margin-left: 60%;
+  margin-left: 58%;
 }
 
 .fish-lines {
@@ -162,14 +160,14 @@ body {
   width: 20%;
   color: #7eb6bc;
   margin-top: -0.5em;
-  margin-left: 5%;
+  margin-left: 3%;
   width: 25%;
   right: 3em;
 }
 .cool-line {
    float: left;
   /*position: absolute;*/
-  width: 30%;
+  width: 24%;
   border-bottom: 3px solid #7eb6bc;
   left: 29%;
 }
