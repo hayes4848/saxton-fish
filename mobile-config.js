@@ -9,11 +9,11 @@ App.info({
   website: 'http://example.com'
 });
 // Set up resources such as icons and launch screens.
-// App.icons({
-//   'iphone': 'icons/icon-60.png',
-//   'iphone_2x': 'icons/icon-60@2x.png',
-//   // ... more screen sizes and platforms ...
-// });
+App.icons({
+  'iphone': 'public/PNGs/icon60.png',
+  'iphone_2x': 'public/PNGs/icon60.png',
+  // ... more screen sizes and platforms ...
+});
 App.launchScreens({
   'iphone6': 'public/fish/fish_background.png',
   'iphone_2x': 'public/fish/fish_background.png',
