@@ -11,8 +11,9 @@ body {
   width: 98%;
   /*white-space: nowrap;*/
   overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
+  font-family:'Proxima Nova W15', 'Montserrat';
+  /*font-family: 'Montserrat', sans-serif;*/
+  /*font-weight: bold;*/
 }
 .header{
   position: relative;
