@@ -28,7 +28,7 @@ Template.addInfo.events({
   'click #submit1': function() {
     var date = new Date();
     var vote = {
-      day: moment(date).format("MM.DD.YYYY"),
+      day: moment().startOf('day').toDate(),
       side: Session.get('side'),
       vote: 'fish1'
     };
@@ -39,7 +39,7 @@ Template.addInfo.events({
   'click #submit2': function() {
     var date = new Date();
     var vote = {
-      day: moment(date).format("MM.DD.YYYY"),
+      day: moment().startOf('day').toDate(),
       side: Session.get('side'),
       vote: 'fish2'
     };
@@ -50,7 +50,7 @@ Template.addInfo.events({
   'click #submit3': function() {
     var date = new Date();
     var vote = {
-      day: moment(date).format("MM.DD.YYYY"),
+      day: moment().startOf('day').toDate(),
       side: Session.get('side'),
       vote: 'fish3'
     };
@@ -61,7 +61,7 @@ Template.addInfo.events({
   'click #submit4': function() {
     var date = new Date();
     var vote = {
-      day: moment(date).format("MM.DD.YYYY"),
+      day: moment().startOf('day').toDate(),
       side: Session.get('side'),
       vote: 'fish4'
     };
@@ -72,7 +72,7 @@ Template.addInfo.events({
   'click #submit5': function() {
     var date = new Date();
     var vote = {
-      day: moment(date).format("MM.DD.YYYY"),
+      day: moment().startOf('day').toDate(),
       side: Session.get('side'),
       vote: 'fish5'
     };

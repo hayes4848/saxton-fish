@@ -8,7 +8,8 @@
 body {
   background-color: #CCe0e3;
   font-size: 16px;
-  width: 100%;
+  width: 98%;
+  /*white-space: nowrap;*/
   overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
@@ -28,10 +29,12 @@ body {
 .which-side{
   position: absolute;
   /*width: 20%;*/
-  left:40%;
+  left:30%;
   top:0;
-  color:#e2231a;
-  font-size: 25px;
+  color:#CCE0E3;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 .nav-gear {
   position: absolute;
@@ -42,7 +45,7 @@ body {
 .footer-nav {
   width:100%;
   position: absolute;
-  bottom: 0;
+  bottom: 25px;
 }
 .footer-images {
   width: 33%;
@@ -86,7 +89,7 @@ body {
 }
 .voting-body {
   margin-top:15em;
-  width: 100%;
+  width: 93%;
   position: relative;
   margin-left: 10%;
 }

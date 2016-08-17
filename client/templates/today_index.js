@@ -17,8 +17,9 @@ Template.todayIndex.helpers({
   whichFish: function() {
     date = new Date();
     today = moment(date).format("MM.DD.YYYY");
-    allVotes = Votes.find({side:"South", day:today}).fetch();
-
+    allVotes = Votes.find({side:"South", day:moment().startOf('day').toDate()}).fetch();
+    // allVotes = Votes.find().fetch();
+    console.log(moment(date).startOf('day'));
     var voteTally = {};
     var fish='';
     for(var i=0; i < allVotes.length; i++) { 
@@ -35,8 +36,6 @@ Template.todayIndex.helpers({
     var keysSorted = Object.keys(voteTally).sort(function(a,b){return voteTally[a]-voteTally[b]});
 
     var lastItem = keysSorted.pop();
-
-    console.log(lastItem);
 
     if(Session.get('side') == "North"){
       return Template.instance().guppy.get();

@@ -11,6 +11,14 @@ Template.tenDay.helpers({
     } else {
       return Template.instance().southSide.get();
     }
+  }, 
+
+  getTenDayData: function() {
+    var today = moment();
+    var tenDaysAgo = today.subtract(10, "days");
+    var result = Votes.find({day:{$gte: tenDaysAgo.toDate(), $lte: today.toDate()}}).fetch();
+    console.log(today.toDate());
   }
 
 })
+
