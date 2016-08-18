@@ -92,7 +92,7 @@ body {
   margin-top:15em;
   width: 93%;
   position: relative;
-  margin-left: 10%;
+  margin-left: 12%;
 }
 .voting-body img{
   width: 10em;
@@ -147,6 +147,7 @@ body {
   font-family:'Proxima Nova W15', 'Montserrat';
   font-weight: thin; 
   width: 100%;
+  margin-left: 5px;
 }
 
 .guppy-text {
