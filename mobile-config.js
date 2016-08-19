@@ -1,11 +1,11 @@
 // This section sets up some basic app metadata,
 // the entire section is optional.
 App.info({
-  id: 'com.example.matt.uber',
-  name: 'Fish',
+  id: 'com.saxton.fish',
+  name: 'Fish Index',
   description: 'Something smells fishy.. ',
   author: 'Andrew Hayes',
-  email: 'contact@example.com',
+  email: 'andythemanhayes@hotmail.com',
   website: 'http://example.com'
 });
 // Set up resources such as icons and launch screens.
