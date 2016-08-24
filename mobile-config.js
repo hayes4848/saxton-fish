@@ -2,7 +2,7 @@
 // the entire section is optional.
 App.info({
   id: 'com.saxton.fish',
-  name: 'Fish Index',
+  name: 'Fish',
   description: 'Something smells fishy.. ',
   author: 'Andrew Hayes',
   email: 'andythemanhayes@hotmail.com',
