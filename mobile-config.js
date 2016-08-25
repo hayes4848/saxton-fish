@@ -6,7 +6,8 @@ App.info({
   description: 'Something smells fishy.. ',
   author: 'Andrew Hayes',
   email: 'andythemanhayes@hotmail.com',
-  website: 'http://example.com'
+  website: 'http://example.com',
+  version: '1.0.0'
 });
 // Set up resources such as icons and launch screens.
 App.icons({
