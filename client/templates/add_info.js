@@ -34,7 +34,7 @@ Template.addInfo.events({
     };
 
     if (Cookie.get("alreadyVoted") == "true") {
-      alert('you have already voted today!');
+      alert('You have already voted today, Please vote again tomorrow!');
     } else {
       console.log('voted, no cookie');
       Cookie.set('alreadyVoted', 'true', {"hours": 10})
@@ -51,7 +51,7 @@ Template.addInfo.events({
     };
 
     if (Cookie.get("alreadyVoted") == "true") {
-      alert('you have already voted today!');
+      alert('You have already voted today, Please vote again tomorrow!');
     } else {
       console.log('voted, no cookie');
       Cookie.set('alreadyVoted', 'true', {"hours": 10})
@@ -68,7 +68,7 @@ Template.addInfo.events({
     };
 
    if (Cookie.get("alreadyVoted") == "true") {
-      alert('you have already voted today!');
+      alert('You have already voted today, Please vote again tomorrow!');
     } else {
       console.log('voted, no cookie');
       Cookie.set('alreadyVoted', 'true', {"hours": 10})
@@ -85,7 +85,7 @@ Template.addInfo.events({
     };
 
     if (Cookie.get("alreadyVoted") == "true") {
-      alert('you have already voted today!');
+      alert('You have already voted today, Please vote again tomorrow!');
     } else {
       console.log('voted, no cookie');
       Cookie.set('alreadyVoted', 'true', {"hours": 10})
@@ -102,7 +102,7 @@ Template.addInfo.events({
     };
 
     if (Cookie.get("alreadyVoted") == "true") {
-      alert('you have already voted today!');
+      alert('You have already voted today, Please vote again tomorrow!');
     } else {
       console.log('voted, no cookie');
       Cookie.set('alreadyVoted', 'true', {"hours": 10})
