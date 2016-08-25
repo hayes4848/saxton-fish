@@ -33,7 +33,13 @@ Template.addInfo.events({
       vote: 'fish1'
     };
 
-    vote._id = Votes.insert(vote);
+    if (Cookie.get("alreadyVoted") == "true") {
+      alert('you have already voted today!');
+    } else {
+      console.log('voted, no cookie');
+      Cookie.set('alreadyVoted', 'true', {"minutes": 1})
+      vote._id = Votes.insert(vote);
+    }
     Router.go('todayIndex');
   },
   'click #submit2': function() {
@@ -44,7 +50,13 @@ Template.addInfo.events({
       vote: 'fish2'
     };
 
-    vote._id = Votes.insert(vote);
+    if (Cookie.get("alreadyVoted") == "true") {
+      alert('you have already voted today!');
+    } else {
+      console.log('voted, no cookie');
+      Cookie.set('alreadyVoted', 'true', {"minutes": 1})
+      vote._id = Votes.insert(vote);
+    }
     Router.go('todayIndex');
   },
   'click #submit3': function() {
@@ -55,7 +67,13 @@ Template.addInfo.events({
       vote: 'fish3'
     };
 
-    vote._id = Votes.insert(vote);
+   if (Cookie.get("alreadyVoted") == "true") {
+      alert('you have already voted today!');
+    } else {
+      console.log('voted, no cookie');
+      Cookie.set('alreadyVoted', 'true', {"minutes": 1})
+      vote._id = Votes.insert(vote);
+    }
     Router.go('todayIndex');
   },
   'click #submit4': function() {
@@ -66,7 +84,13 @@ Template.addInfo.events({
       vote: 'fish4'
     };
 
-    vote._id = Votes.insert(vote);
+    if (Cookie.get("alreadyVoted") == "true") {
+      alert('you have already voted today!');
+    } else {
+      console.log('voted, no cookie');
+      Cookie.set('alreadyVoted', 'true', {"minutes": 1})
+      vote._id = Votes.insert(vote);
+    }
     Router.go('todayIndex');
   },
   'click #submit5': function() {
@@ -77,7 +101,13 @@ Template.addInfo.events({
       vote: 'fish5'
     };
 
-    vote._id = Votes.insert(vote);
+    if (Cookie.get("alreadyVoted") == "true") {
+      alert('you have already voted today!');
+    } else {
+      console.log('voted, no cookie');
+      Cookie.set('alreadyVoted', 'true', {"minutes": 1})
+      vote._id = Votes.insert(vote);
+    }
     Router.go('todayIndex');
   },
 })

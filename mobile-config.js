@@ -10,8 +10,7 @@ App.info({
 });
 // Set up resources such as icons and launch screens.
 App.icons({
-  // 'iphone': 'public/PNGs/icon60.png',
-  'iphone_2x': 'public/PNGs/icon60.png',
+  'iphone_2x': 'public/PNGs/icon120.png',
   'iphone_3x': 'public/PNGs/icon180.png',
   'ios_settings': 'public/PNGs/icon29.png',
   'ios_settings_2x': 'public/PNGs/icon58.png',
