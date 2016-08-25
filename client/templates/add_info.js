@@ -37,7 +37,7 @@ Template.addInfo.events({
       alert('you have already voted today!');
     } else {
       console.log('voted, no cookie');
-      Cookie.set('alreadyVoted', 'true', {"minutes": 1})
+      Cookie.set('alreadyVoted', 'true', {"hours": 10})
       vote._id = Votes.insert(vote);
     }
     Router.go('todayIndex');
@@ -54,7 +54,7 @@ Template.addInfo.events({
       alert('you have already voted today!');
     } else {
       console.log('voted, no cookie');
-      Cookie.set('alreadyVoted', 'true', {"minutes": 1})
+      Cookie.set('alreadyVoted', 'true', {"hours": 10})
       vote._id = Votes.insert(vote);
     }
     Router.go('todayIndex');
@@ -71,7 +71,7 @@ Template.addInfo.events({
       alert('you have already voted today!');
     } else {
       console.log('voted, no cookie');
-      Cookie.set('alreadyVoted', 'true', {"minutes": 1})
+      Cookie.set('alreadyVoted', 'true', {"hours": 10})
       vote._id = Votes.insert(vote);
     }
     Router.go('todayIndex');
@@ -88,7 +88,7 @@ Template.addInfo.events({
       alert('you have already voted today!');
     } else {
       console.log('voted, no cookie');
-      Cookie.set('alreadyVoted', 'true', {"minutes": 1})
+      Cookie.set('alreadyVoted', 'true', {"hours": 10})
       vote._id = Votes.insert(vote);
     }
     Router.go('todayIndex');
@@ -105,7 +105,7 @@ Template.addInfo.events({
       alert('you have already voted today!');
     } else {
       console.log('voted, no cookie');
-      Cookie.set('alreadyVoted', 'true', {"minutes": 1})
+      Cookie.set('alreadyVoted', 'true', {"hours": 10})
       vote._id = Votes.insert(vote);
     }
     Router.go('todayIndex');
