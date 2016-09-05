@@ -23,3 +23,4 @@ iron:router
 session
 momentjs:moment
 proyk:meteor-cookies
+fourseven:scss
